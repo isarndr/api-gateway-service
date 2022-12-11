@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: userModule
+          uri: https://user-service-production-6fa9.up.railway.app/
+          predicates:
+            - Path=/users/**
+        - id: filmModule
+          uri: https://film-service-production.up.railway.app/
+          predicates:
+            - Path=/films/**
