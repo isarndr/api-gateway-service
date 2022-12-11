@@ -13,3 +13,15 @@ spring:
           uri: https://film-service-production.up.railway.app/
           predicates:
             - Path=/films/**
+        - id: scheduleModule
+          uri: https://schedule-service-production.up.railway.app/
+          predicates:
+            - Path=/schedules/**
+        - id: seatModule
+          uri: https://seat-service-production.up.railway.app/
+          predicates:
+            - Path=/seats/**
+        - id: invoiceModule
+          uri: https://invoice-service-production.up.railway.app/
+          predicates:
+            - Path=/invoice/**
