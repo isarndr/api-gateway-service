@@ -45,7 +45,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.7.5</version>
                 <configuration>
-                    <mainClass>com.codewithIsa.ApiGatewayServiceApplication</mainClass>
+                    <mainClass>com.codewithisa.ApiGatewayServiceApplication</mainClass>
                 </configuration>
 
                 <executions>
