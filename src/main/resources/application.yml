@@ -7,6 +7,7 @@ spring:
       routes:
         - id: userModule
           uri: https://user-service-production-6fa9.up.railway.app/
+#          uri: "http://localhost:9001/"
           predicates:
             - Path=/users/**
         - id: filmModule
