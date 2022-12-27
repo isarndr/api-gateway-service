@@ -6,10 +6,10 @@ spring:
     gateway:
       routes:
         - id: userModule
-          uri: https://user-service-production-6fa9.up.railway.app/
-#          uri: "http://localhost:9001/"
+#          uri: https://user-service-production-6fa9.up.railway.app/
+          uri: "http://localhost:9001/"
           predicates:
-            - Path=/users/**
+            - Path=/user/**
         - id: filmModule
           uri: https://film-service-production.up.railway.app/
 #          uri: "http://localhost:9002/"

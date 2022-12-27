@@ -9,24 +9,24 @@ spring:
 #          uri: https://user-service-production-6fa9.up.railway.app/
           uri: "http://localhost:9001/"
           predicates:
-            - Path=/users/**
+            - Path=/user/**
         - id: filmModule
-#          uri: https://film-service-production.up.railway.app/
-          uri: "http://localhost:9002/"
+          uri: https://film-service-production.up.railway.app/
+#          uri: "http://localhost:9002/"
           predicates:
             - Path=/films/**
         - id: scheduleModule
-#          uri: https://schedule-service-production-12cd.up.railway.app/
-          uri: "http://localhost:9003/"
+          uri: https://schedule-service-production-12cd.up.railway.app/
+#          uri: "http://localhost:9003/"
           predicates:
             - Path=/schedules/**
         - id: seatModule
-#          uri: https://seat-service-production-3b8e.up.railway.app/
-          uri: "http://localhost:9004/"
+          uri: https://seat-service-production-3b8e.up.railway.app/
+#          uri: "http://localhost:9004/"
           predicates:
             - Path=/seats/**
         - id: invoiceModule
-#          uri: https://invoice-service-production-6ffc.up.railway.app/
-          uri: "http://localhost:9005/"
+          uri: https://invoice-service-production-6ffc.up.railway.app/
+#          uri: "http://localhost:9005/"
           predicates:
             - Path=/invoice/**
